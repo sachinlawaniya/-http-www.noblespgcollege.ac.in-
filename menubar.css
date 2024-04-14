@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .head img{
+    border-radius:40px;
+    width: 120px;
+    height: 120px;
+  }
+  .head h1{
+    font-size: 450%;
+    font-weight: 600;
+    margin: auto;
+    margin-top:auto;
+
+  }
+  /* .collegename{
+    font-size: 58px;
+  } */
+  .navbar-brand:hover{
+    text-decoration: underline gold;
+    transition: 3 ease-in-out;
+    color: gold;
+
+  }
+  .collapse{
+    padding-left: 30%;
+
+  }
+
+  .nav-link{
+    font-size: 95%;
+    font-weight: 600;
+    margin: auto;
+    margin-top:auto;
+  }
