@@ -43,6 +43,10 @@ background-color: white !important;
 color: black !important;
 
 }
+ .Secretary, .Director ,.principle ,.vice-principle {
+  width: 100%;
+  height:300px;
+}
 /* enquiry section form css  */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@700&display=swap');
 
