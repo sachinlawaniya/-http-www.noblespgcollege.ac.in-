@@ -1,0 +1,235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  .head img{
+    border-radius:40px;
+    width: 120px;
+    height: 120px;
+  }
+  .head h1{
+    font-size: 450%;
+    font-weight: 600;
+    margin: auto;
+    margin-top:auto;
+
+  }
+  /* .collegename{
+    font-size: 58px;
+  } */
+  .navbar-brand:hover{
+    text-decoration: underline gold;
+    transition: 3 ease-in-out;
+    color: gold;
+
+  }
+  .collapse{
+    padding-left: 30%;
+
+  }
+
+  .nav-link{
+    font-size: 75%;
+    font-weight: 600;
+    margin: auto;
+    margin-top:auto;
+  }
+  .carousel-item img{
+  height: 400px;
+  }
+  .card-group .card:hover{
+  background-color: white !important;
+  color: black !important;
+
+  }
+   .Secretary, .Director ,.principle ,.vice-principle {
+    width: 100%;
+    height:300px;
+  }
+  /* enquiry section form css  */
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap');
+
+
+
+  .fa-house{
+    font-size: 48px;
+    color: red;
+  }
+
+
+
+  .contact-box{
+        padding: 48px;
+      box-shadow: 0 0 30px rgb(46 71 93 / 12%);
+    max-width: 600px;
+    margin: 30px auto 30px;
+  }
+
+  .contact-box h2{
+    font-size: 20px;
+     font-weight: 700;
+    margin-bottom: 25px;
+    font-family: libre baskerville ,serif;
+    font-family: "Baskerville"
+  }
+
+  .input-group{
+    margin-bottom: 30px;
+  }
+
+  .form-label{
+    margin-bottom: 7px;
+    display: inline-block;
+  }
+
+  .form-control{
+    border: 1px solid #f4f4f4;
+    border-radius: 4px;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #f4f4f4;
+    height: 50px;
+    width: 100%;
+    padding: 15px;
+  }
+
+  .form-control:focus{
+    border: 1px solid #122c91;
+    outline: none;
+  }
+
+  span.ast{
+    color: red;
+  }
+
+  ::placeholder {
+    color: #aaa;
+  }
+
+  .btn-submit{
+    padding: 20px 30px;
+    text-transform: uppercase;
+    border: none;
+      background-color: #122c91;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+
+  .btn-submit:hover{
+    background: #0b5ed7;
+  }
+
+  #blue-box{
+    background: blue;
+    color: white;
+    padding: 15px;
+  }
+
+  #blue-box:hover{
+    background: red;
+    font-size: 24px;
+  }
+
+  .fa-gear{
+    font-size: 60px;
+    color: green;
+  }
+
+  .fa-solid{
+    font-size: 80px;
+  }
+  /* footer section css */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  body{
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  .container{
+      max-width: 1170px;
+      margin:auto;
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  ul{
+      list-style: none;
+  }
+  li{
+      text-align: justify;
+  }
+  .footer{
+      background-color: #02091a;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      position: relative;
+  }
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: block;
+      transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+      color: #ffffff;
+      padding-left: 8px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin:0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      color: #ffffff;
+      transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+      color: #24262b;
+      background-color: #ffffff;
+  }
+
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
