@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  border: #0d4ceb;
 }
 .head img{
   border-radius:40px;
@@ -30,7 +31,7 @@
 }
 
 .nav-link{
-  font-size: 95%;
+  font-size: 80%;
   font-weight: 600;
   margin: auto;
   margin-top:auto;
