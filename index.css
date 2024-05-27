@@ -2,7 +2,10 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  border: #0d4ceb;
+
+}
+body{
+  width:700px;
 }
 .head img{
   border-radius:40px;
@@ -29,15 +32,43 @@
   padding-left: 30%;
 
 }
+.navbar-nav{
+
+  margin:0;
+  margin-top:auto;
+}
 
 .nav-link{
-  font-size: 70%;
+  font-size: 80%;
   font-weight: 600;
   margin: auto;
   margin-top:auto;
 }
 .carousel-item img{
 height: 400px;
+}
+.column{
+  width: 25%;
+height: 450px;
+background-color: #02091a;
+
+
+}
+.column ,.crad,.card img ,.card-body{
+  border: none;
+  background-color:transparent;
+
+}
+.card{
+  border: none;
+
+}
+.card-text{
+  color: black;
+}
+.card img{
+  border-radius: 50%;
+  scale: 0.7;
 }
 .card-group .card:hover{
 background-color: white !important;
@@ -47,6 +78,7 @@ color: black !important;
  .Secretary, .Director ,.principle ,.vice-principle {
   width: 100%;
   height:300px;
+  border: none
 }
 /* enquiry section form css  */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Poppins:wght@700&display=swap');
@@ -153,13 +185,13 @@ span.ast{
 }
 /* footer section css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-body{
+/* body{
 	line-height: 1.5;
 	font-family: 'Poppins', sans-serif;
-}
+} */
 
 .container{
-	max-width: 1170px;
+	max-width: 100%;
 	margin:auto;
 }
 .row{
@@ -172,6 +204,10 @@ ul{
 li{
 	text-align: justify;
 }
+.flashnews{
+  width: 50%;
+}
+
 .footer{
 	background-color: #02091a;
     padding: 70px 0;
@@ -179,6 +215,8 @@ li{
 .footer-col{
    width: 25%;
    padding: 0 15px;
+   text-align: center;
+   word-spacing: 10px;
 }
 .footer-col h4{
 	font-size: 18px;
@@ -187,6 +225,7 @@ li{
 	margin-bottom: 35px;
 	font-weight: 500;
 	position: relative;
+  text-decoration: underline 3px;
 }
 .footer-col ul li:not(:last-child){
 	margin-bottom: 10px;
@@ -197,9 +236,11 @@ li{
 	color: #ffffff;
 	text-decoration: none;
 	font-weight: 300;
-	color: #bbbbbb;
+	color:white;
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	display: block;
 	transition: all 0.3s ease;
+  text-align: left;
 }
 .footer-col ul li a:hover{
 	color: #ffffff;
@@ -207,19 +248,24 @@ li{
 }
 .footer-col .social-links a{
 	display: inline-block;
-	height: 40px;
-	width: 40px;
+	height: 60px;
+	width: 60px;
 	background-color: rgba(255,255,255,0.2);
-	margin:0 10px 10px 0;
+	/* margin:auto; */
+padding-top: 10px;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
+  font-size: 30px;
 }
 .footer-col .social-links a:hover{
-	color: #24262b;
+	color: #eb1656;
 	background-color: #ffffff;
+}
+.footer-col .social-links .fa-facebook:hover , .footer-col .social-links .fa-twitter:hover{
+  color: #0b5ed7;
 }
 
 @media(max-width: 767px){
@@ -227,10 +273,123 @@ li{
     width: 50%;
     margin-bottom: 30px;
 }
+
+
+.column{
+  width: 100%;
+height: 450px;
+
+}
+.enquiry{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+.border{
+  width: 400px;
+}
+
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
 }
+body{
+  width: 100%;
+}
+.flashnews{
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
 }
 
+.column{
+  width: 100%;
+height: 450px;
+
+}
+.enquiry{
+  display:flex;
+  flex-wrap: wrap;
+
+}
+.border{
+  width: 100%;
+  border: rgb(247, 243, 7) solid 2px;
+}
+}
+
+
+
+
+
+
+.intro-message {
+  position: relative;/*不加top、right、bottom、left表现得和static一样*/
+  padding-top:20%;
+  padding-bottom: 20%;
+
+}
+
+.about-page {
+  padding: 50px 0;
+  height: 855px;
+}
+
+section {
+  color: black;
+}
+
+.portfolio-item {
+  border:1px outset rgba(255,255,255,0.6);
+}
+
+.portfolio-item:hover {
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+}
+
+.portfolio-caption {
+  max-width: 400px;
+  margin:0 auto;
+  background-color: rgba(0,0,0,0.8);
+  text-align: right;
+  padding:25px;
+}
+
+.small-text {
+  color:white;
+}
+
+.contact-page {
+  padding: 100px 0;
+  height: 755px;
+}
+
+.banner-social-buttons {
+    display: flex;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+
+.contact-page ul li {
+  display: block;
+  margin: 10px;
+}
+
+footer {
+    padding: 50px 0;
+    background: rgba(192, 192, 192, 0.9);
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}

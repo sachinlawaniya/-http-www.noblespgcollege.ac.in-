@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="index.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="homeresponsive.css">
 </head>
 
 <body class=" container  text-light">
@@ -25,13 +26,74 @@
     AOS.init();
   </script>
   <!-- create a logo and college name section .  -->
-  <div class="head container-fluid bg-danger text-warning text-capitalize text-center  d-flex">
+  <div class="head container-fluid w-100 bg-danger text-warning text-capitalize text-center  d-flex">
     <img src="img/nobles logo.jpg" alt="">
     <h1 class=" text-uppercase collegename" data-aos="flip-right" data-aos-duration="3000">nobles pg college</h1>
 
   </div>
   <!-- create a nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand " href="admin.html">Admin login</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse text-capitalize" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            about us
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">NOC</a></li>
+            <li><a class="dropdown-item" href="#">NCTE</a></li>
+            <li><a class="dropdown-item" href="#">college application</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">college building</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">news</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="syllabus.html">syllabus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">student corner</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">facilities</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">contact us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container-fluid text-capitalize ">
       <a class="navbar-brand " href="admin.html">Admin login</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -84,7 +146,7 @@
 
       </div>
     </div>
-  </nav>
+  </nav> -->
   <!-- create a main section crocuel img slider -->
   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -127,9 +189,15 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <iframe width="100%" height="350" src="https://www.youtube.com/embed/ztwzxRJUTcM?si=sqQjWcFSISBdD0C1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
   <!-- create a chancler , vc , and principle about section -->
-  <div class="row  row-cols-1 py-4 text-capitalize align-center text-center justify-content-center" style="margin: auto;" >
-    <div class="col-3">
+
+
+  <div class="row  row-cols-1 py-4 text-capitalize align-center text-center justify-content-center" style="margin: auto;"  >
+    <div class="column" data-aos="fade-up"
+     data-aos-duration="3000">
       <div class="card text-center">
         <img src="img/PHOTO-MADHU.jpeg.jpg" class="card-img-top Secretary" alt="...">
         <div class="card-body text-center">
@@ -138,7 +206,8 @@
         </div>
       </div>
     </div>
-    <div class="col-3">
+    <div class="column" data-aos="fade-up"
+     data-aos-duration="3000">
       <div class="card ">
         <img src="img/Photo - HC Sharma.jpg" class="card-img-top Director" alt="...">
         <div class="card-body ">
@@ -147,7 +216,8 @@
         </div>
       </div>
     </div>
-    <div class="col-3">
+    <div class="column" data-aos="fade-up"
+     data-aos-duration="3000">
       <div class="card ">
         <img src="img/Sarvesh Jain.jpeg.jpg" class="card-img-top principle" alt="Secretary">
         <div class="card-body ">
@@ -156,7 +226,8 @@
         </div>
       </div>
     </div>
-    <div class="col-3">
+    <div class="column"data-aos="fade-up"
+    data-aos-duration="3000">
       <div class="card ">
         <img src="img/DR. MANJU.jpg" class="card-img-top vice-principle" alt="...">
         <div class="card-body">
@@ -172,27 +243,36 @@
   <h1 class="text-decoration-underline text-center text-warning">OUR FACILITIES</h1>
 
   <div class="card-group container-fluid mt-3 gap-5 bg-secondary flex-wrap-wrap text-capitalize ">
-    <div class="card d-flex text-center bg-secondary text-light pt-2 ">
-      <img src="img/games logo.png" class="card-img-top w-25 m-auto rounded-circle" alt="..."  >
+    <div class="card d-flex text-center bg-secondary text-light pt-2 " data-aos="fade-up"
+    data-aos-duration="3000">
+      <img src="img/games logo.png" data-aos="fade-right"
+      data-aos-duration="3000" class="card-img-top w-25 m-auto rounded-circle" alt="..."  >
       <h5 class="card-title">games and sports</h5>
 
-      <div class="card-body">
+      <div class="card-body" data-aos="fade-up"
+      data-aos-duration="3000">
         <p class="card-text">Sports are essential for the physical growth of students. Our college provide opportunities of sports with help of University to students .Last three years (session -2017—18, 2018-19 and 2019-20) 20.. Read more.</p>
       </div>
     </div>
-    <div class="card d-flex text-center  text-light pt-2 bg-secondary ">
-      <img src="img/computer lab.png" class="card-img-top w-25 m-auto rounded-circle" alt="..."  >
+    <div class="card d-flex text-center  text-light pt-2 bg-secondary " data-aos="fade-up"
+    data-aos-duration="3000">
+      <img src="img/computer lab.png" class="card-img-top w-25 m-auto rounded-circle" alt="..." data-aos="fade-right"
+      data-aos-duration="3000"  >
       <h5 class="card-title">computer lab</h5>
 
-      <div class="card-body">
+      <div class="card-body"  data-aos="fade-up"
+      data-aos-duration="3000">
         <p class="card-text">Our College has well equipped computer labs for students, teacher with more than 08 computers. The staff is technically sound and makes use of latest trends, gadgets and applications. Read more…</p>
       </div>
     </div>
-    <div class="card d-flex text-center bg-secondary text-light pt-2 ">
-      <img src="img/library.png" class="card-img-top w-25 m-auto rounded-circle" alt="..."  >
+    <div class="card d-flex text-center bg-secondary text-light pt-2 " data-aos="fade-up"
+    data-aos-duration="3000">
+      <img src="img/library.png" class="card-img-top w-25 m-auto rounded-circle" alt="..." data-aos="fade-right"
+      data-aos-duration="3000"  >
       <h5 class="card-title">library</h5>
 
-      <div class="card-body">
+      <div class="card-body"  data-aos="fade-up"
+      data-aos-duration="3000">
         <p class="card-text">Library is the soul of the institution and it acquires, processes, preserves and disseminates information to the user community with the motto of empowering knowledge. It has an extensive collection of books. Read more…</p>
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
@@ -200,28 +280,37 @@
 
 
   </div>
-  <div class="card-group container-fluid pt-3 gap-5 bg-secondary flex-wrap-wrap text-capitalize ">
+  <div class="card-group container-fluid pt-3 gap-5 bg-secondary flex-wrap-wrap text-capitalize " data-aos="fade-up"
+  data-aos-duration="3000">
     <div class="card d-flex text-center bg-secondary text-light pt-2 ">
-      <img src="img/ncte certified.png" class="card-img-top w-25 m-auto rounded-circle" alt="..."  >
+      <img src="img/ncte certified.png" class="card-img-top w-25 m-auto rounded-circle" alt="..." data-aos="fade-right"
+      data-aos-duration="3000"  >
       <h5 class="card-title text-capitalize">Recognized by Govt. Of Rajasthan & Affiliated to RRBMU Alwar</h5>
 
-      <div class="card-body">
+      <div class="card-body"  data-aos="fade-up"
+      data-aos-duration="3000">
         <p class="card-text"> </p>
       </div>
     </div>
-    <div class="card d-flex text-center  text-light pt-2 bg-secondary ">
-      <img src="img/transport.png" class="card-img-top w-25 m-auto rounded-circle" alt="..."  >
+    <div class="card d-flex text-center  text-light pt-2 bg-secondary " data-aos="fade-up"
+    data-aos-duration="3000">
+      <img src="img/transport.png" class="card-img-top w-25 m-auto rounded-circle" alt="..." data-aos="fade-right"
+      data-aos-duration="3000" >
       <h5 class="card-title">Transportation</h5>
 
-      <div class="card-body">
+      <div class="card-body"  data-aos="fade-up"
+      data-aos-duration="3000">
         <p class="card-text">College Have own transportation vehicles for  students and staff. We have 1 buses for carry out and in college from around city and out side of city. Read more…</p>
       </div>
     </div>
-    <div class="card d-flex text-center bg-secondary text-light pt-2 ">
-      <img src="img/staff icon.png" class="card-img-top w-25 m-auto rounded-circle" alt="..."  >
+    <div class="card d-flex text-center bg-secondary text-light pt-2 " data-aos="fade-up"
+    data-aos-duration="3000">
+      <img src="img/staff icon.png" class="card-img-top w-25 m-auto rounded-circle" alt="..." data-aos="fade-right"
+      data-aos-duration="3000" >
       <h5 class="card-title">Staff & Faculty</h5>
 
-      <div class="card-body">
+      <div class="card-body"  data-aos="fade-up"
+      data-aos-duration="3000">
         <p class="card-text">College staff have well qualified educated and experience. There are Phd, NET, SLET etc staff.  , Read more…</p>
       </div>
     </div>
@@ -230,11 +319,11 @@
   </div>
 </div>
 <!-- enquiry form section  -->
-<div class="container-fluid d-flex bg-secondary mt-1">
-  <div class="flashnews w-50 mt-5 p-4" ">
-    <h2 class="text-capitalize text-danger ">examinationa news</h2>
-    <marquee behavior="" direction="up" class="border" style="height: 200px;"  >
-    <ul   class="text-dark text-center" style="line-height: 40px; list-style-type:circle;" style="height: 200px;" >
+<div class="container-fluid d-flex wrap bg-secondary mt-1 enquiry">
+  <div class="flashnews  mt-5" >
+    <h2 class="text-capitalize text-LIGHT ">examinationa news</h2>
+    <marquee behavior="" direction="up" class="" style="height: 200px;"  >
+    <ul   class="text-dark text-center h4" style="line-height: 40px; list-style-type:circle;" style="height: 200px; width: 400PX;"  >
       <li><a href="" class="text-warning">MA Previous/FINAL EXAM SHEDULE</a></li>
       <li><a href="" class="text-warning">MA Previous/FINAL EXAM SHEDULE</a></li>
       <li><a href="" class="text-warning">MA Previous/FINAL EXAM SHEDULE</a></li>
@@ -250,8 +339,8 @@
     </ul>
     </marquee>
     <br>
-    <h3>Map Location</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2032.3210859070234!2d76.79390568976414!3d27.574324845613198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972958998de7591%3A0x247e3aef0030bffe!2z4KSo4KWL4KSs4KSy4KWN4KS4IFBHIOCkleClieCksuClh-CknCwg4KSw4KS-4KSu4KSX4KSi4KS8!5e0!3m2!1shi!2sin!4v1713164033950!5m2!1shi!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+
+   </div>
 
 <div class="contact-box border">
   <h2 align="center" class=" text-decoration-underline ">
@@ -297,6 +386,8 @@
 </div>
 </div>
   <script src="https://kit.fontawesome.com/b3bbdfc294.js" crossorigin="anonymous"></script>
+  <!-- <h3>Map Location</h3> -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2032.3210859070234!2d76.79390568976414!3d27.574324845613198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3972958998de7591%3A0x247e3aef0030bffe!2z4KSo4KWL4KSs4KSy4KWN4KS4IFBHIOCkleClieCksuClh-CknCwg4KSw4KS-4KSu4KSX4KSi4KS8!5e0!3m2!1shi!2sin!4v1713164033950!5m2!1shi!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
   <!-- footer section  -->
   <footer class="footer">
@@ -330,8 +421,10 @@
               Nobles pg College, berebas moad , goha , Ramgarh, Alwar  State : Rajasthan , <br>
               PIN - 301026;</a>
             </p></li>
-            <li> <a href=""><i class="fa fa-google-plus-square fa-2x"></i> noblespg2005@gmail.com</a></i></li>
-            <li><a href="https://www.google.com/maps/place/%E0%A4%A8%E0%A5%8B%E0%A4%AC%E0%A4%B2%E0%A5%8D%E0%A4%B8+PG+%E0%A4%95%E0%A5%89%E0%A4%B2%E0%A5%87%E0%A4%9C,+%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%97%E0%A4%A2%E0%A4%BC/@27.5745328,76.7941499,15z/data=!4m2!3m1!1s0x0:0x247e3aef0030bffe?sa=X&ved=1t:2428&ictx=111"><i class="fa fa-map fa-2x"></i> map location </a></li>
+            <li> <a href=""><i class="fa fa-message fa-1x "></i> NPGC2005@gmail.com</a></i></li>
+            <li> <a href=""><i class="fa fa-phone fa-2x text-light"></i>&nbsp; 89520 14989</a></i></li>
+            <li> <a href=""><i class="fa fa-whatsapp fa-2x text-success"></i>&nbsp; 89520 14989</a></i></li>
+            <li><a href="https://www.google.com/maps/place/%E0%A4%A8%E0%A5%8B%E0%A4%AC%E0%A4%B2%E0%A5%8D%E0%A4%B8+PG+%E0%A4%95%E0%A5%89%E0%A4%B2%E0%A5%87%E0%A4%9C,+%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%97%E0%A4%A2%E0%A4%BC/@27.5745328,76.7941499,15z/data=!4m2!3m1!1s0x0:0x247e3aef0030bffe?sa=X&ved=1t:2428&ictx=111"><i class="fa fa-map fa-2x text-warning"></i> map location </a></li>
 
           </ul>
         </div>
@@ -339,7 +432,7 @@
           <h4>follow us</h4>
           <div class="social-links">
             <a href=""><i class="fa fa-google"></i></a>
-            <a href="https://www.facebook.com/noblespgcollege/"><i class="fa fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/noblespgcollege/"><i class="fa fa-facebook "></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
           </div>
